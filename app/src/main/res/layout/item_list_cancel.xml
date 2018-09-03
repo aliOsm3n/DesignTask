@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/cir_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/type_car"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:textColor="@color/background"
+        android:layout_marginTop="8dp"
+        android:id="@+id/tittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/cir_view"
+        android:text="@string/tittle"
+        android:layout_toLeftOf="@+id/cir_view" />
+
+    <RelativeLayout
+        android:layout_marginTop="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/lay_data"
+        android:layout_below="@+id/tittle"
+        android:layout_toStartOf="@+id/cir_view"
+        tools:ignore="UnknownId"
+        android:layout_toLeftOf="@+id/cir_view">
+
+        <ImageView
+            android:layout_marginTop="4dp"
+            android:id="@+id/quick_img"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/my_list_help_accepted_time"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@+id/quick_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/from_hour"
+            android:layout_toStartOf="@+id/quick_img"
+            android:layout_toLeftOf="@+id/quick_img" />
+
+        <ImageView
+            android:layout_marginEnd="4dp"
+            android:layout_marginTop="4dp"
+            android:id="@+id/men_img"
+            android:layout_toStartOf="@+id/quick_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/my_list_help_accepted_info_attendance"
+            android:layout_marginRight="4dp"
+            android:layout_toLeftOf="@+id/quick_text" />
+
+        <TextView
+            android:id="@+id/men_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/men"
+            android:layout_toStartOf="@+id/men_img"
+            android:layout_toLeftOf="@+id/men_img" />
+
+        <ImageView
+            android:layout_marginEnd="4dp"
+            android:layout_marginTop="4dp"
+            android:id="@+id/car_img"
+            android:layout_toStartOf="@+id/men_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/my_list_help_accepted_info_help_type"
+            android:layout_marginRight="4dp"
+            android:layout_toLeftOf="@+id/men_text" />
+
+        <TextView
+            android:id="@+id/car_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/car_ph"
+            android:layout_toStartOf="@+id/car_img"
+            android:layout_toLeftOf="@+id/car_img" />
+
+        <ImageView
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:id="@+id/num_car_img"
+            android:layout_toStartOf="@+id/car_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/my_list_help_accepted_accept"
+            android:layout_marginRight="4dp"
+            android:layout_toLeftOf="@+id/car_text" />
+
+        <TextView
+            android:id="@+id/num_car_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/num_car_ph"
+            android:layout_toStartOf="@+id/num_car_img"
+            android:layout_toLeftOf="@+id/num_car_img" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
